@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+:root {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+    color: #e5e7eb;
+    background: #090d16;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+button,
+select,
+input {
+    outline-offset: 3px;
+}
+
+::selection {
+    color: white;
+    background: #4f46e5;
+}
+
+.panel {
+    border: 1px solid #202b3c;
+    background: #101724;
+    border-radius: 14px;
+}
+
+.field {
+    width: 100%;
+    border: 1px solid #2a3548;
+    background: #0b111c;
+    color: #e5e7eb;
+    border-radius: 8px;
+    padding: 9px 11px;
+}
+
+.field:focus {
+    border-color: #818cf8;
+}
+
+.primary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: #4f46e5;
+    color: white;
+    padding: 10px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background 150ms ease;
+}
+
+.primary-button:hover:not(:disabled) {
+    background: #4338ca;
+}
+
+.secondary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 1px solid #2a3548;
+    border-radius: 8px;
+    background: #151e2d;
+    color: #dbeafe;
+    padding: 9px 12px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.secondary-button:hover:not(:disabled) {
+    background: #202c40;
+}
+
+.label {
+    display: block;
+    color: #9ca3af;
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+
+.muted {
+    color: #94a3b8;
+}
+
+.data-scroll {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+pre {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0b111c;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #344155;
+    border-radius: 8px;
+}
